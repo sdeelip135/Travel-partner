@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  body{
+    /* background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.doKIMZFZzOASY6ZJpZ6ClgHaEX%26pid%3DApi&f=1&ipt=87da084e9364d269a7918a8677ef2eef5fccd3416698eec6c10288dbbf20923f&ipo=images"); */
+    /* background: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F06%2FFree-desktop-world-map-wallpapers-HD.jpg&f=1&nofb=1&ipt=9642b30dca3c9b5ced93ea664934c2c244fe6ffcdb79845f198008f3fa255227&ipo=images"); */
+    /* background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.Pg_KSBTO0u2mqfk4FLoYbwHaE7%26pid%3DApi&f=1&ipt=fe8ecc3d7dfdf0f4318f313a444723c7feccbb4cb462e08db2cbb4ba68622e0d&ipo=images"); */
+    background: url("c.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    position: relative;
+  }
+  .logo{
+    font-size: 28px;
+    color: white;
+    padding-bottom: -00px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .logo img{
+    padding-left: 25px;
+    margin-right: 18px;
+    height: 80px;
+    width: 100px;
+  }
+  span{
+    color: #46aaf6;
+  }
+  .nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #494750; 
+    align-items: center;
+    width: 100%;
+    opacity: 0.8;
+    overflow: hidden;
+  }
+
+  .nav ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-left: -50px;
+  }
+  .nav li{
+    list-style: none;
+  }
+  .nav li a{
+    display: block;
+    text-decoration: none;
+    color: #46aaf6;
+    font-size: 20px;
+    padding: 18px;
+    border-radius: 18px;
+  }
+  .nav li a:hover{
+    color:white;
+  }
+  .nav button{
+    background-color: #46aaf6;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 12px;
+    padding: 8px;
+    margin-right: 18px;
+  }
+  .nav button:hover{
+    background-color: white;
+    color:#46aaf6;
+    transition: .4s;
+    cursor: pointer;
+    transition: .2s;
+  }
+  .nav button a{
+    text-decoration: none;
+    color: white;
+  }
+  .nav button a:hover{
+    color: #46aaf6;
+  }
+  .se{
+    display: flex;
+    padding: 12px;
+    padding-right: 10px;
+    border-style: none;
+  }
+  .se #sea{
+    color: white;
+    font-size: 23px;
+  }
+  #search{
+    border-radius: 25px;
+    padding-left: 2%;
+  }
+  #a{
+    border: 2px solid grey;
+    padding-right: 56vh;
+    margin-top: 22px;
+    margin-left: 10vh;
+    padding-top: 18px;
+    padding-bottom: 28vh;
+    padding-left: 15px;
+    position: absolute;
+    display: block;
+    /* background-color: #494750; */
+    opacity: 0.8;
+    color: white;
+    border-radius: 12px;
+    backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.552);
+  }
+  #a p{
+      font-size: 23px;
+  }
+  #a span{
+    color: red;
+    font-size: 32px;
+  }
+.nav a:hover{
+  background-color: #46aaf6;
+}
+.ti{
+  /* border: 2px solid #4546456d; */
+  opacity: 0.8;
+  /* background-color: #4546456d; */
+  display: block;
+  position: absolute;
+  align-items: center;
+  margin-left: 115vh;
+  margin-top: 4vh;
+  padding-left: 7vh;
+  padding-top: 18vh;
+  padding-bottom: 8vh;
+  border-radius: 12px;
+  padding-right: 18vh;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.552);
+}
+label{
+  color: aliceblue;
+}
+#sub{
+    margin-left: 28vh;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 12px;
+    /* background-color: #46aaf6; */
+    background: linear-gradient(122deg,#46aaf6,white);
+    color: rgb(71, 76, 81);
+    border-style: none;
+}
+#sub:hover{
+    font-size: 20px;
+    color: #221ac4;
+    cursor: pointer;
+    transition: .5s;
+}
+.ti input{
+    border-style: none;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.cards{
+  display: flexbox;
+  margin-left: 50vh;
+}
+.cards .a1,.a2,.a3,.a4{
+  padding: 5%;
+  margin-top: 2%;
+  width: 50%;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  justify-content: center;
+  align-items: center;
+}
+.cards .a1{
+  margin-top: 40%;
+}
