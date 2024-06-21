@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Partner</title>
+    <link rel="icon" href="images/l.jpeg">
+    <style>
+        /* CSS for styling the travel planner */
+        body {
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        @font-face {
+            font-family: "Dongle-light";
+            src: url("Dongle/Dongle-Light.ttf");
+        }
+
+        @font-face {
+            font-family: "Dongle-regular";
+            src: url("Dongle/Dongle-Regular.ttf");
+        }
+
+        @font-face {
+            font-family: "Dongle-bold";
+            src: url("Dongle/Dongle-Bold.ttf");
+        }
+
+        header {
+            display: flex;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            align-items: center;
+        }
+        .container{
+    position: absolute;
+    top: 42%;
+    left: 38%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #000000;
+}
+.container h1{
+    font-family: "Dongle-bold";
+    font-size: 4rem;
+    margin-left: 46vh;
+}
+.container p{
+    font-family: "Dongle-regular";
+    font-size: 1.8rem;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+/* button{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #fd6731;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-family: "Dongle-light";
+    font-size: 1.6rem;
+    transition: all ease 0.3s;
+}
+button:hover{
+    background-color: #45a049;
+} */
+
+        .logo img {
+            max-width: 10%;
+        }
+
+        #log {
+            width: 46vw;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 18px;
+            justify-content: space-between;
+            align-items: center;
+            font-family: "Dongle-bold";
+            font-size: 3.6rem;
+            color: #333;
+            transition: all ease 0.3s;
+        }
+
+        .nav-menu ul {
+            display: flex;
+        }
+
+        .nav-menu li {
+            list-style: none;
+            margin-right: 20px;
+        }
+
+        .nav-menu li:last-child {
+            margin-right: 0;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            font-family: "Dongle-bold";
+            font-size: 2.0rem;
+            color: #333;
+            transition: all ease 0.3s;
+            gap: 18px;
+        }
+
+        .nav-menu a:hover {
+            color: #ff7f50;
+        }
+        .hero{
+    display: fixed;
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+/*.hero-image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}*/
+/* .live-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}* */
+.hero-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #000000;
+}
+
+        /* .container {
+            max-width: 180vh;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px 0 20px 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: url(images/pexels-nickoloui-1102159.jpg);
+            align-items: center;
+            height: 117vh;
+            background-repeat: no-repeat;
+            background-size: contain;
+        } */
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            margin-top: 5vw;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            width: 80vh;
+            margin-left: 50vh;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        select {
+            width: calc(100% - 12px);
+            padding: 8px;
+            margin-top: 4px;
+            margin-bottom: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        button{
+            background-color: #fd6731;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover{
+            background-color: #45a049;
+        }
+
+        .plan {
+            margin-left: 20vw;
+
+        }
+
+        .container a {
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html" id="log"><img src="images/l.jpeg" alt="logo" />Travel Partner</a>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="places.html">Destinations</a></li>
+                <li><a href="hotels.html">Hotels</a></li>
+                <li><a href="activity.html">Activities</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- main code -->
+<section class="hero">
+    <video autoplay muted loop id="myvideo">
+        <source src="flight.mp4" type="video/mp4">
+    </video>
+
+    <div class="container">
+        <h1><a href="index.html">Travel Partner</a></h1>
+        <form id="travelForm" action="destiny.html" onload="">
+            <div class="form-group">
+                <label for="places">Choose a Destination:</label>
+                <select name="places" id="places">
+                    <option value="Choose a Destination...">Choose a Destination...</option>
+                    <option value="1">Mysore</option>
+                    <option value="2">Coorg</option>
+                    <option value="3">Kodaikanal</option>
+                    <option value="4">Ooty</option>
+                    <option value="5">Manali</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="startDate">Start Date:</label>
+                <input type="date" id="startDate" name="startDate" required>
+            </div>
+            <div class="form-group">
+                <label for="endDate">End Date:</label>
+                <input type="date" id="endDate" name="endDate" required>
+            </div>
+            <div class="form-group">
+                <label for="travelType">No. Of Persons</label>
+                <select id="travelType" name="travelType" required>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <!-- <div class="form-group">
+                <label for="mode">Mode of Transport</label>
+                <select id="mode" name="mode" required>
+                    <option value="1">Flight</option>
+                    <option value="2">Train</option>
+                    <option value="3">Bus</option>
+                    <option value="4">Car</option>
+                    <option value="other">Other</option>
+                </select>
+            </div> -->
+            <div class="plan">
+                <button type="button" onclick="fun()" >Plan My Trip</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+    <script>
+        const dateInput = document.getElementById('startDate');
+
+        // ✅ Using the visitor's timezone
+        dateInput.value = formatDate();
+
+        console.log(formatDate());
+
+        function padTo2Digits(num) {
+            return num.toString().padStart(2, '0');
+        }
+
+        function formatDate(date = new Date()) {
+            return [
+                date.getFullYear(),
+                padTo2Digits(date.getMonth() + 1),
+                padTo2Digits(date.getDate()),
+            ].join('-');
+        }
+
+        function fun() {
+            const place = document.getElementById('places').value;
+            console.log(place);
+            console.log(typeof(place));
+            if (place ==="1") {
+                window.location.href = './mysore.html';
+            }
+            else if(place==="2")
+            window.location.href = './coorg.html';
+            else if(place==="3")
+            window.location.href = './kodaikanal.html';
+            else if(place==="4")
+            window.location.href = './Ooty.html';
+            else if(place==="5")
+            window.location.href = './manali.html';
+        }
+    </script>
+    </div>
+</body>
+
+</html>

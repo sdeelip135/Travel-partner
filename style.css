@@ -1,0 +1,505 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: "Dongle-light";
+    src: url("Dongle/Dongle-Light.ttf");
+}
+@font-face {
+    font-family: "Dongle-regular";
+    src: url("Dongle/Dongle-Regular.ttf");
+}
+@font-face {
+    font-family: "Dongle-bold";
+    src: url("Dongle/Dongle-Bold.ttf");
+}
+header{
+    display: flex;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+    align-items: center;
+}
+.logo img{
+    max-width: 10%;
+    height: 8vh;
+}
+#log{
+    width: 46vw;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Dongle-bold";
+    font-size: 3.6rem;
+    color: #333;
+    transition: all ease 0.3s;
+}
+.nav-menu ul{
+ display: flex;
+}
+.nav-menu li{
+    list-style: none;
+    margin-right: 20px;
+}
+.nav-menu li:last-child{
+    margin-right: 0;
+}
+.nav-menu a{
+    text-decoration: none;
+    font-family: "Dongle-bold";
+    font-size: 2.0rem;
+    color: #333;
+    transition: all ease 0.3s;
+    gap: 18px;
+}
+.nav-menu a:hover{
+    color: #ff7f50;
+}
+#bn{
+    align-items: center;
+    border-style: none;
+    padding: 1px 5px;
+    justify-content: center;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: "Dongle-bold";
+    font-size: 1.6rem;
+    color: #F7F7F7;
+    background-color: #ff7f50;
+    transition: all ease 0.3s;
+}
+#bn:hover{
+    background-color: #45a049;
+    color: #F7F7F7;
+    cursor: pointer;
+}
+.hero{
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+/*.hero-image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}*/
+/* .live-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}* */
+.hero-content{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #000000;
+}
+.hero-content h1{
+    font-family: "Dongle-bold";
+    font-size: 4rem;
+    color: #000000;
+}
+.hero-content p{
+    font-family: "Dongle-regular";
+    color: #000000;
+    font-size: 1.8rem;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+.hero-button{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #fd6731;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-family: "Dongle-light";
+    font-size: 1.6rem;
+    transition: all ease 0.3s;
+}
+.hero-button:hover{
+    background-color: #45a049;
+}
+.destinations{
+    font-size: 2.4rem;
+    font-family: "Dongle-bold";
+    margin: 40px 80px;
+    text-align: center;
+}
+.destinations h2{
+    margin-bottom: 40px;
+}
+.destination-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+.destination-item img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.destination-item{
+    text-align: left;
+}
+.destination-item h3{
+    font-size: 2rem;
+}
+.destination-item p{
+    font-size: 1.4rem;
+    line-height: 1;
+    font-family: "Dongle-regular";
+}
+.about{
+    text-align: center;
+    padding: 100px;
+}
+.about h3{
+   font-family: "Dongle-bold";
+   font-size: 3rem;
+}
+.about p{
+    font-family: "Dongle-regular";
+    font-size: 1.4rem;
+    line-height: 1;
+    margin-bottom: 40px;
+}
+.team-members{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.team-member img{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    object-fit: cover;
+}
+.team-member h4{
+    font-family: "Dongle-bold";
+    font-size: 2rem;
+}
+/* .contact{
+    padding: 80px;
+    text-align: center;
+    background-color: #F7F7F7;
+}
+.contact h3{
+    font-family: "Dongle-bold";
+    font-size: 3rem;
+}
+.contact-info p{
+    font-family: "Dongle-regular";
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+.contact-info ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+} 
+.contact-info li{
+    margin: 0 20px;
+    font-family: "Dongle-regular";
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+  
+}
+.contact-info li a{
+    text-decoration: none;
+    font-family: "Dongle-regular";
+    color: black;
+}
+.contact-info i{
+    font-size: 24px;
+    margin-right: 10px;
+} */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    font-family: "Dongle-bold";
+    font-size: 30px;
+}
+.left-container, .right-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h1, h2 {
+    color: #333;
+    text-align: center;
+    font-family: "Dongle-bold";
+    font-size: 60px;
+}
+.contact-form {
+    margin-top: 20px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.form-group input, 
+.form-group textarea {
+    width: calc(100% - 12px);
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+.form-group input[type="submit"] {
+    background-color: #fd6731;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 30px;
+}
+.form-group input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.contact-details {
+    text-align: center;
+    margin-top: 32vh;
+}
+.contact-details p {
+    margin-bottom: 10px;
+}
+.about p{
+    font-size: 40px;
+}
+/* .contact{
+    padding: 80px;
+    text-align: center;
+    background-color: #F7F7F7;
+}
+.contact h3{
+    font-family: "Dongle-bold";
+    font-size: 3rem;
+}
+.contact-info p{
+    font-family: "Dongle-regular";
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+.contact-info ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+} 
+.contact-info li{
+    margin: 0 20px;
+    font-family: "Dongle-regular";
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+  
+}
+.contact-info li a{
+    text-decoration: none;
+    font-family: "Dongle-regular";
+    color: black;
+}
+.contact-info i{
+    font-size: 24px;
+    margin-right: 10px;
+} 
+
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+  }
+  
+  .contact .row form{
+    flex:1 1 45rem;
+    padding:2rem;
+    border:1rem solid #fff;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.500);
+    border-radius: 15px;
+  }
+  
+  .contact .row form:hover{
+    box-shadow: 0 1rem 2rem rgb(0, 0, 0);
+  }
+  
+  .contact .row form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .contact .row form .inputBox input, .contact .row form textarea{
+    width:23%;
+    margin:1rem 0;
+    padding:1rem;
+    font-size: 1.7rem;
+    color:#333;
+    background:#f7f7f7;
+    text-transform: none;
+  }
+  
+  .contact .row form textarea{
+    height: 15rem;
+    resize: none;
+    width:100%;
+  }
+  
+  .contact .row .map :hover{
+   box-shadow: 0 1rem 2rem rgb(0, 0, 0);
+  } */
+        
+
+.form{
+    width: 100%;
+}
+input,textarea{
+    width: 70%;
+    padding: 10px;
+    margin: 20px 0;
+    border: none;
+    box-shadow: 0 0 5px rgba(0,0,0, 0.1);
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-family: "Dongle-regular";
+}
+textarea{
+    height: 200px;
+}
+.form button{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff7f50;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-family: "Dongle-light";
+    font-size: 1.6rem;
+    border: none;
+    transition: all ease 0.3s;
+}
+.form button:hover{
+    background-color: #333;
+}
+
+footer{
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+.social-icons a{
+    color: #fff;
+    font-size: 24px;
+    margin-right: 20px;
+}
+footer p{
+    font-family: "Dongle-regular";
+    font-size: 1.4rem;
+}
+@media (max-width: 1177px) {
+    .hero-content h1{
+        line-height: 0.7;
+    }
+    .hero-content p{
+        margin-top: 0;
+        line-height: 0.8;
+    }
+    .destinations img{
+        height: 250px;
+    }
+    input, textarea{
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .hero-content h1{
+        margin-bottom: 5px;
+    }
+    .team-member img{
+        width: 200px;
+        height: 200px;
+    }
+    .destination-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+    }
+}
+@media (max-width:603px){
+    .hero-content h1{
+        font-size: 2rem;
+    }
+    .hero-content p{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width:430px){
+    header{
+        display: none;
+    }
+    .hero-content h1{
+        font-size: 1.3rem;
+    }
+    .hero-content p{
+        font-size: 1rem;
+    }
+    .hero-button{
+        padding: 6px 22px;
+        font-size: 16px;
+    }
+    .destinations{
+        font-size: 1.5rem;
+    }
+    .destination-grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 40px;
+    }
+    .about{
+        padding: 0 30px;
+    }
+    .team-member img{
+        width: 250px;
+        height: 250px;
+    }
+}
+  

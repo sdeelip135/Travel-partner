@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/l.jpeg">
+</head>
+<html>
+      <body>
+
+              <header>
+                <div class="logo">
+                    <a href="index.html" id="log"><img  src="images/l.jpeg" alt="logo" />Travel Partner</a>
+                </div>
+                <nav class="nav-menu">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="places.html">Destinations</a></li>
+                    <li><a href="destiny.html" style="font-size: 29px;">New Trip</a></li>
+                    <li><a href="hotels.html">Hotels</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                  </ul>
+                </nav>
+              </header>
+<section id="activites" class="destinations">
+    <h3>Featured Activities</h3>
+    <div class="destination-grid">
+      <div class="destination-item">
+        <img src="images/w.jpg" alt="" />
+        <h3>Water Sports</h3>
+        <p>
+          Experience luxury accommodations and impeccable service at The
+          Ritz Carlton, located in the heart of the city.
+        </p>
+      </div>
+      <div class="destination-item">
+        <img src="images/r.jpg" alt="" />
+        <h3>River Rafting & Tubing.</h3>
+        <p>
+          Relax in style at The Four Seasons, featuring breathtaking views,
+          an award-winning spa, and gourmet dining options.
+        </p>
+      </div>
+      <div class="destination-item">
+        <img src="images/c.jpeg" alt="" />
+        <h3>Pearl Valley</h3>
+        <p>
+          Indulge in luxury at The Waldorf Astoria, a historic landmark
+          hotel renowned for its elegance and sophistication.
+        </p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+  <style>
+    *{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Dongle-bold';
+}
+@font-face {
+    font-family: "Dongle-light";
+    src: url("Dongle/Dongle-Light.ttf");
+}
+@font-face {
+    font-family: "Dongle-regular";
+    src: url("Dongle/Dongle-Regular.ttf");
+}
+@font-face {
+    font-family: "Dongle-bold";
+    src: url("Dongle/Dongle-Bold.ttf");
+}
+header{
+    display: flex;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+    align-items: center;
+}
+.logo img{
+    max-width: 10%;
+}
+#log{
+    width: 53vw;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Dongle-bold";
+    font-size: 3.6rem;
+    color: #333;
+    transition: all ease 0.3s;
+}
+a.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #fd6731;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-family: "Dongle-light";
+    font-size: 1.6rem;
+    transition: all ease 0.3s;
+}
+.nav-menu ul{
+ display: flex;
+}
+.nav-menu li{
+    list-style: none;
+    margin-right: 20px;
+}
+.nav-menu li:last-child{
+    margin-right: 0;
+}
+.nav-menu a{
+    text-decoration: none;
+    font-family: "Dongle-bold";
+    font-size: 2.0rem;
+    color: #333;
+    transition: all ease 0.3s;
+}
+.nav-menu a:hover{
+    color: #ff7f50;
+}
+    .destinations{
+    font-size: 2.4rem;
+    font-family: "Dongle-bold";
+    margin: 40px 80px;
+    text-align: center;
+}
+.destinations h2{
+    margin-bottom: 40px;
+}
+.destination-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+.destination-item img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.destination-item{
+    text-align: left;
+}
+.destination-item h3{
+    font-size: 2rem;
+}
+.destination-item p{
+    font-size: 1.4rem;
+    line-height: 1;
+    font-family: "Dongle-regular";
+}
+  </style>

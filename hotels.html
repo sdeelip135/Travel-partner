@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Hotels in India</title>
+    <link rel="icon" href="images/l.jpeg">
+    <style>
+        /* CSS for styling the hotel listings */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        @font-face {
+    font-family: "Dongle-light";
+    src: url("Dongle/Dongle-Light.ttf");
+}
+@font-face {
+    font-family: "Dongle-regular";
+    src: url("Dongle/Dongle-Regular.ttf");
+}
+@font-face {
+    font-family: "Dongle-bold";
+    src: url("Dongle/Dongle-Bold.ttf");
+}
+header{
+    display: flex;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+    align-items: center;
+}
+.logo img{
+    max-width: 10%;
+}
+#log{
+    width: 46vw;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Dongle-bold";
+    font-size: 3.6rem;
+    color: #333;
+    transition: all ease 0.3s;
+}
+.nav-menu ul{
+ display: flex;
+}
+.nav-menu li{
+    list-style: none;
+    margin-right: 20px;
+}
+.nav-menu li:last-child{
+    margin-right: 0;
+}
+.nav-menu a{
+    text-decoration: none;
+    font-family: "Dongle-bold";
+    font-size: 2.0rem;
+    color: #333;
+    transition: all ease 0.3s;
+    gap: 18px;
+}
+.nav-menu a:hover{
+    color: #ff7f50;
+}
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .hotel {
+            width: 300px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .hotel img {
+            width: 100%;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .hotel-info {
+            padding: 15px;
+        }
+        .hotel-info h2 {
+            margin-top: 0;
+            font-size: 20px;
+            color: #333;
+        }
+        .hotel-info p {
+            margin: 8px 0;
+            font-size: 14px;
+            color: #666;
+        }
+        .hotel-info .price {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        .hotel-info .time {
+            font-size: 14px;
+        }
+        .hotel-info .location {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        .map-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        .map {
+            width: 100%;
+            height: 200px; /* Adjust height as needed */
+        }
+        #b{
+                margin-left: 6vw;
+        }
+        #b:hover{
+            cursor: pointer;
+        }
+        #b a{
+            font-size: 1.0rem;
+            text-decoration: none;
+            color: #fff;
+        }
+        button {
+            border-radius: 25px;
+            background-color: #ff7f50;
+            padding: 12px;
+            border: none;
+        }
+        #b button:hover{
+            background-color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html" id="log"><img  src="images/l.jpeg" alt="logo" />Travel Partner</a>
+        </div>
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="places.html">Destinations</a></li>
+            <li><a href="destiny.html" style="font-size: 29px;">New Trip</a></li>
+            <li><a href="activity.html">Activities</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+          
+        </nav>
+      </header>
+    <div class="container">
+        <!-- Hotel 1 -->
+        <div class="hotel">
+            <img src="images/hotel-1.jpg" alt="Hotel 1">
+            <div class="hotel-info">
+                <h2>Taj Mahal Palace, Mysore</h2>
+                <p>Price per night: <span class="price">₹10,000</span></p>
+                <p>Check-in: <span class="time">2:00 PM</span> | Check-out: <span class="time">12:00 PM</span></p>
+                <p class="location">Location: Colaba, Mysore</p>
+                <div class="map-container">
+                    <!-- Google Maps Embed API code -->
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.2095005503895!2d72.82381681448553!3d18.92198468717055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce60b5e5ac53%3A0x5cf41c0ec6b4becc!2sThe%20Taj%20Mahal%20Palace%20Mumbai!5e0!3m2!1sen!2sin!4v1623863940975!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div id="b">
+                <button><a href="payment.html">Book Now</a></button>
+            </div>
+            </div>
+        </div>
+
+        <!-- Repeat structure for more hotels -->
+        <!-- Hotel 2 -->
+        <div class="hotel">
+            <img src="images/hotel-2.jpg" alt="Hotel 2">
+            <div class="hotel-info">
+                <h2>The Oberoi Udaivilas, Mysore</h2>
+                <p>Price per night: <span class="price">₹20,000</span></p>
+                <p>Check-in: <span class="time">3:00 PM</span> | Check-out: <span class="time">11:00 AM</span></p>
+                <p class="location">Location: Tilak Nagar, Mysore</p>
+                <div class="map-container">
+                    <!-- Google Maps Embed API code -->
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117.97293821211658!2d73.7124799189562!3d24.571697756868126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8b62b9d6b0661c3b!2sThe%20Oberoi%20Udaivilas%2C%20Udaipur!5e0!3m2!1sen!2sin!4v1623864000851!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div id="b">
+                    <button><a href="payment.html">Book Now</a></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hotel 3 -->
+        <div class="hotel">
+            <img src="images/hotel-3.jpg" alt="Hotel 3">
+            <div class="hotel-info">
+                <h2>ITC Grand Chola, Mysore</h2>
+                <p>Price per night: <span class="price">₹15,000</span></p>
+                <p>Check-in: <span class="time">2:00 PM</span> | Check-out: <span class="time">12:00 PM</span></p>
+                <p class="location">Location: Guindy, Mysore</p>
+                <div class="map-container">
+                    <!-- Google Maps Embed API code -->
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.2829022049526!2d80.21624081475145!3d13.006022990821524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267774234d6ed%3A0x5d7dfb79f06500a8!2sITC%20Grand%20Chola%2C%20a%20Luxury%20Collection%20Hotel%2C%20Chennai!5e0!3m2!1sen!2sin!4v1623864041083!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div id="b">
+                    <button><a href="payment.html">Book Now</a></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hotel 4 -->
+        <div class="hotel">
+            <img src="images/hotel-4.jpg" alt="Hotel 4">
+            <div class="hotel-info">
+                <h2>Leela Palace, Mysore</h2>
+                <p>Price per night: <span class="price">₹18,000</span></p>
+                <p>Check-in: <span class="time">2:00 PM</span> | Check-out: <span class="time">12:00 PM</span></p>
+                <p class="location">Location: Chanakyapuri, Mysore</p>
+                <div class="map-container">
+                    <!-- Google Maps Embed API code -->
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.4563646282164!2d77.18886911507228!3d28.591929982417084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3a81f9db22f%3A0x7f6d58da89660df!2sThe%20Leela%20Palace%20New%20Delhi!5e0!3m2!1sen!2sin!4v1623864081066!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div id="b">
+                    <button><a href="payment.html">Book Now</a></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hotel 5 -->
+        <div class="hotel">
+            <img src="images/hotel-5.jpg" alt="Hotel 5">
+            <div class="hotel-info">
+                <h2>The Leela Mysore</h2>
+                <p>Price per night: <span class="price">₹25,000</span></p>
+                <p>Check-in: <span class="time">3:00 PM</span> | Check-out: <span class="time">11:00 AM</span></p>
+                <p class="location">Location: Cavelossim, Mysore</p>
+                <div class="map-container">
+                    <!-- Google Maps Embed API code -->
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3837.6253747857093!2d73.94671981471493!3d15.17710768943716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbf42a6a4a7083f%3A0x968c803a384fc3a7!2sThe%20Leela%20Goa!5e0!3m2!1sen!2sin!4v1623864118852!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div id="b">
+                    <button><a href="payment.html">Book Now</a></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hotel 6 -->
+        <div class="hotel">
+            <img src="images/hotel-6.jpg" alt="Hotel 6">
+            <div class="hotel-info">
+                <h2>Wildflower Hall, Mysore</h2>
+                <p>Price per night: <span class="price">₹12,000</span></p>
+                <p>Check-in: <span class="time">2:00 PM</span> | Check-out: <span class="time">12:00 PM</span></p>
+                <p class="location">Location: Mashobra, Mysore</p>
+                <div class="map-container">
+                    <!-- Google Maps Embed API code -->
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3436.5815457887127!2d77.4750293152171!3d31.096691881505566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39043c993d0711d3%3A0xd3990a14b1e35e0a!2sWildflower%20Hall%2C%20An%20Oberoi%20Resort%2C%20Shimla!5e0!3m2!1sen!2sin!4v1623864156943!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div id="b">
+                    <button><a href="payment.html">Book Now</a></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hotel 7 -->
+        <div class="hotel">
+            <img src="images/hotel-7.jpg" alt="Hotel 7">
+            <div class="hotel-info">
+                <h2>Taj Falaknuma Palace, Mysore</h2>
+                <p>Price per night: <span class="price">₹30,000</span></p>
+                <p>Check-in: <span class="time">3:00 PM</span> | Check-out: <span class="time">11:00 AM</span></p>
+                <p class="location">Location: Falaknuma, Mysore</p>
+                <div class="map-container">
+                    <!-- Google Maps Embed API code -->
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.1864687467586!2d78.45183201473205!3d17.331372889116457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb92b33c793c8b%3A0x85c42c7a7e4eb81e!2sTaj%20Falaknuma%20Palace!5e0!3m2!1sen!2sin!4v1623864205575!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div id="b">
+                    <button><a href="payment.html">Book Now</a></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hotel 8 -->
+        <div class="hotel">
+            <img src="images/hotel-8.jpg" alt="Hotel 8">
+            <div class="hotel-info">
+                <h2>Rambagh Palace, Mysore</h2>
+                <p>Price per night: <span class="price">₹17,000</span></p>
+                <p>Check-in: <span class="time">2:00 PM</span> | Check-out: <span class="time">12:00 PM</span></p>
+                <p class="location">Location: Jaipur, Mysore</p>
+                <div class="map-container">
+                    <!-- Google Maps Embed API code -->
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.232885780087!2d75.80876801504358!3d26.911946683133253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391d1962ce244f9d%3A0xf37b4d5e3ff6c409!2sRambagh%20Palace!5e0!3m2!1sen!2sin!4v1623864244718!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div id="b">
+                    <button><a href="payment.html">Book Now</a></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hotel 9 -->
+        <div class="hotel">
+            <img src="images/hotel-9.jpg" alt="Hotel 9">
+            <div class="hotel-info">
+                <h2>The Oberoi Amarvilas, Mysore</h2>
+                <p>Price per night: <span class="price">₹23,000</span></p>
+                <p>Check-in: <span class="time">3:00 PM</span> | Check-out: <span class="time">11:00 AM</span></p>
+                <p class="location">Location: Mandi Mohala, Mysore</p>
+                <div class="map-container">
+                    <!-- Google Maps Embed API code -->
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.0702576112416!2d78.04130921506735!3d27.17514428296317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3974719a75943721%3A0x1bae91bfec36e6a5!2sThe%20Oberoi%20Amarvilas%2C%20Agra!5e0!3m2!1sen!2sin!4v1623864290344!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div id="b">
+                    <button><a href="payment.html">Book Now</a></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hotel 10 -->
+        <div class="hotel">
+            <img src="images/hotel-10.jpg" alt="Hotel 10">
+            <div class="hotel-info">
+                <h2>Oberoi Rajvilas, Mysore</h2>
+                <p>Price per night: <span class="price">₹19,000</span></p>
+                <p>Check-in: <span class="time">2:00 PM</span> | Check-out: <span class="time">12:00 PM</span></p>
+                <p class="location">Location: Gayatri Puram, Mysore</p>
+                <div class="map-container">
+                    <!-- Google Maps Embed API code -->
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.2062206838553!2d75.85467401504371!3d26.914694183128376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391d19693ed0f3ad%3A0x9860eb6ce5a31ca3!2sThe%20Oberoi%20Rajvilas%2C%20Jaipur!5e0!3m2!1sen!2sin!4v1623864326946!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div id="b">
+                    <button><a href="payment.html">Book Now</a></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
